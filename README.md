@@ -9,6 +9,15 @@ or the *C runtime*.
 ##Overview
 The Visual Studio project **SelfLoader** shows how to bootstrap *LoadLibraryW*, *GetProcAddress* and *FreeLibrary*, and uses those to get the function pointer to MessageBoxW from *user32.dll*.
 The other project **EnumPEBModules**, displays a bunch of information about the modules found via the PEB.
+For more information on the technique used, look at these links:
+
+* [Win32 Hacks: Loading API functions from a process' Process Environment Block (PEB) Part 1 of 2 (blogger.com)](http://pimpmycode.blogspot.no/2015/01/win32-hacks-loading-api-functions-from.html)
+* [Win32 Hacks: Loading API functions from a process' Process Environment Block (PEB) Part 2 of 2 (blogger.com)](http://pimpmycode.blogspot.no/2015/01/win32-hacks-loading-api-functions-from_4.html)
+* [Win32 Thread Information Block (Wikipedia)](https://en.wikipedia.org/wiki/Win32_Thread_Information_Block)
+* [Win32 Process Environment Block (Wikipedia)](https://en.wikipedia.org/wiki/Process_Environment_Block)
+* [Win32 PEB Loader Data (shitwefoundout.com)](http://shitwefoundout.com/wiki/Win32_PEB_Loader_data)
+* https://code.google.com/p/corkami/wiki/PE
+
 
 ##Building
 Currently the repository only contains Visual Studio Express 2013 solution files. CMakeList.txt for CMake is coming soon. Building the Visual Studio projects requires
